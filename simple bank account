@@ -1,0 +1,18 @@
+class BankAccount {
+    constructor() {
+        this.balance = 0;
+    }
+
+    deposit(amount) {
+        this.balance += amount;
+    }
+
+    withdraw(amount) {
+        if (amount <= this.balance) this.balance -= amount;
+    }
+}
+
+let acc = new BankAccount();
+acc.deposit(100);
+acc.withdraw(30);
+console.log(acc.balance); // 70
