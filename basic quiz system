@@ -1,0 +1,8 @@
+let question = { question: "Capital of France?", answer: "Paris" };
+
+function checkAnswer(input) {
+    console.log(input === question.answer ? "Correct!" : "Wrong!");
+}
+
+checkAnswer("Paris"); // Correct!
+checkAnswer("London"); // Wrong!
