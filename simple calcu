@@ -1,0 +1,9 @@
+function calculator(a, b, op) {
+    if (op === "+") return a + b;
+    if (op === "-") return a - b;
+    if (op === "*") return a * b;
+    if (op === "/") return a / b;
+    return "Invalid operation";
+}
+
+console.log(calculator(5, 2, "+")); // 7
